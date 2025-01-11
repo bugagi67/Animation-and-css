@@ -1,0 +1,80 @@
+body {
+	font-family: Arial, sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	background-color: #f9f9f9;
+}
+
+.container {
+	position: relative;
+	width: 400px;
+	background: white;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	margin-bottom: 200px;
+}
+
+button {
+	background-color: #007bff;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+button:hover {
+	background-color: #0056b3;
+}
+
+.text-box {
+	margin-top: 20px;
+	max-height: 0;
+	opacity: 0;
+	overflow: hidden;
+	transition: max-height 0.5s ease, opacity 0.5s ease;
+	padding: 0 15px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	background-color: #f8f9fa;
+	font-size: 14px;
+	text-align: left;
+}
+
+.text-box-active {
+	max-height: 200px;
+	opacity: 1;
+	padding: 15px;
+}
+
+.copy {
+	margin-top: 10px;
+	font-size: 14px;
+	color: #007bff;
+	cursor: pointer;
+	position: absolute;
+	bottom: -20px;
+	right: 10px;
+	transition: transform 0.5s ease;
+}
+
+.copy-succes {
+	color: green;
+	transform: scale(1.25);
+}
+
+.copy-failed {
+	color: red;
+	transform: scale(1.25);
+}
+
+.copy:hover {
+	text-decoration: underline;
+}

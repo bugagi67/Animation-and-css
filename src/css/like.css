@@ -1,0 +1,28 @@
+.container2 {
+	position: relative;
+	width: 300px;
+	height: 300px;
+	border: 1px dashed #ccc;
+	display: flex;
+	justify-content: center;
+	align-items: end;
+	background: white;
+}
+
+.like-button {
+	padding: 10px 20px;
+	background-color: red;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.heart {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Love_Heart_SVG.svg/1200px-Love_Heart_SVG.svg.png') no-repeat center/contain;
+	opacity: 1;
+}
