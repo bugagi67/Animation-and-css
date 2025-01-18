@@ -49,7 +49,7 @@ button:hover {
 }
 
 .text-box-active {
-	max-height: 200px;
+	max-height: fit-content;
 	opacity: 1;
 	padding: 15px;
 }
